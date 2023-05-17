@@ -202,3 +202,5 @@ C:\Users\lprfe\OneDrive\Desktop\Software Engineering Training\C# & .NET\Learning
 C:\Users\lprfe\OneDrive\Desktop\Software Engineering Training\C# & .NET\Learning Projects\TweetBook\TweetBook\obj\Debug\net7.0\TweetBook.pdb
 C:\Users\lprfe\OneDrive\Desktop\Software Engineering Training\C# & .NET\Learning Projects\TweetBook\TweetBook\obj\Debug\net7.0\TweetBook.genruntimeconfig.cache
 C:\Users\lprfe\OneDrive\Desktop\Software Engineering Training\C# & .NET\Learning Projects\TweetBook\TweetBook\obj\Debug\net7.0\ref\TweetBook.dll
+C:\Users\lprfe\OneDrive\Desktop\Software Engineering Training\C# & .NET\Learning Projects\TweetBook\TweetBook\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+C:\Users\lprfe\OneDrive\Desktop\Software Engineering Training\C# & .NET\Learning Projects\TweetBook\TweetBook\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TweetBook</name>
+    </assembly>
+    <members>
+        <member name="M:TweetBook.Controllers.V1.TagsController.GetAll">
+            <summary>
+            Returns all the tags in the system
+            </summary>
+            <response code="201">Returns all the tags in the system</response>
+        </member>
+        <member name="M:TweetBook.Controllers.V1.TagsController.Create(TweetBook.Contracts.V1.Requests.CreateTagRequest)">
+            <summary>
+            Creates a tag in the system
+            </summary>
+            <response code="201">Creates a tag in the system</response>
+            <response code="400">Unable to create the tag due to validation error</response>
+        </member>
+        <member name="T:TweetBook.Migrations.TagNameOnTheRequest">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.TagNameOnTheRequest.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.TagNameOnTheRequest.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.TagNameOnTheRequest.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TweetBook.Migrations.addedIdpropOnTags">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.addedIdpropOnTags.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.addedIdpropOnTags.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.addedIdpropOnTags.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TweetBook.Migrations._1">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations._1.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations._1.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations._1.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TweetBook.Migrations.fkTag">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TweetBook.Migrations.fkTag1">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag1.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag1.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag1.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TweetBook.Migrations.fkTag2">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:TweetBook.Migrations.fkTag3">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag3.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag3.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TweetBook.Migrations.fkTag3.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
