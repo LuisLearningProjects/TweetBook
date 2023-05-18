@@ -22,13 +22,14 @@ namespace TweetBook.IntegrationTests
 
         protected IntegrationTest()
         {
-            var appFactory = new WebApplicationFactory<Program>().
-                WithWebHostBuilder( builder =>
+            var appFactory = new WebApplicationFactory<Program>()
+                .WithWebHostBuilder( builder =>
                 {
                     builder.ConfigureServices(services =>
                     {
-                        services.RemoveAll(typeof(DataContext)) ;
-                        services.AddDbContext<DataContext>(options => 
+                        services.RemoveAll(typeof(DataContext));
+                        services.RemoveAll(typeof(DbContextOptions<DataContext>));
+                        services.AddDbContext<DataContext>(options =>
                         { 
                             options.UseInMemoryDatabase("testDb"); 
                         });
@@ -49,8 +50,8 @@ namespace TweetBook.IntegrationTests
             var response = await testClient.PostAsJsonAsync(ApiRoutes.Identity.Register,
                 new UserRegistrationRequest 
                 {
-                    Email = "lprfernandes10@gmail.com",
-                    Password = "Testando1234!"
+                    Email = "lprfernandes" + (Guid.NewGuid().ToString()).Substring(0, 4) + "@gmail.com",
+                    Password = "Test1234!"
                 });
 
             var registrationResponse = await response.Content.ReadAsAsync<AuthSuccessResponse>();

@@ -19,7 +19,11 @@ var app = builder.Build();
 using(var serviceScope = app.Services.CreateScope())
 {
     var dbContext = serviceScope.ServiceProvider.GetRequiredService<DataContext>();
-    await dbContext.Database.MigrateAsync();
+
+    if (dbContext.Database.ProviderName != "Microsoft.EntityFrameworkCore.InMemory")
+    {
+        await dbContext.Database.MigrateAsync();
+    }
 
     var roleManager = serviceScope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
 
